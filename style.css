@@ -13,6 +13,7 @@ h1, h2, h3 {
 .head {
   background-image: url("images/bg-hero-desktop.svg");
   background-size: cover;
+  margin-bottom: 15vh;
 }
 .head-top {
   display: flex;
@@ -33,10 +34,10 @@ h1, h2, h3 {
   border: none;
   border-radius: 50px;
   box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
-  transition: 1s;
 }
 .head-top button:hover {
   color: hsl(208deg, 11%, 55%);
+  transition: 1s;
 }
 .head-bottom {
   display: block;
@@ -61,13 +62,39 @@ h1, h2, h3 {
   font-weight: 700;
   box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
   margin: 20px;
-  transition: 1s;
 }
 .head-bottom button:hover {
+  transition: 1s;
   background-color: #ff85d2;
 }
 .head-mockup {
   width: 50%;
   height: 50%;
   margin-bottom: 100px;
+}
+
+.block {
+  display: flex;
+  margin: 5vh 7vw;
+  padding: 50px;
+  padding-left: 7vw;
+  justify-content: space-between;
+  border-radius: 30px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+.block-text {
+  width: 35vw;
+  margin: 5vw;
+  margin-left: 0;
+}
+.block-text h2 {
+  font-size: 2.5em;
+}
+.block-text p {
+  font-size: 1.5em;
+  color: hsl(208deg, 11%, 55%);
+}
+.block-image {
+  width: 35%;
+  height: 35%;
 }/*# sourceMappingURL=style.css.map */

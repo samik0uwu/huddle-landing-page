@@ -17,6 +17,7 @@ h1, h2, h3
 .head
     background-image: url("images/bg-hero-desktop.svg")
     background-size: cover
+    margin-bottom: 15vh
     // background-color: #8dbef5ad
     &-top
         display: flex
@@ -35,9 +36,9 @@ h1, h2, h3
             border: none
             border-radius: 50px
             box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15)
-            transition: 1s
             &:hover
                 color: $grayish-blue
+                transition: 1s
     &-bottom
         display: block
         float: left
@@ -59,10 +60,31 @@ h1, h2, h3
             font-weight: 700
             box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15)
             margin: 20px
-            transition: 1s
             &:hover
+                transition: 1s
                 background-color: lighten($pink,10)
     &-mockup
         width: 50%
         height: 50%
         margin-bottom: 100px
+
+.block
+    display: flex
+    margin: 5vh 7vw
+    padding: 50px
+    padding-left: 7vw
+    justify-content: space-between
+    border-radius: 30px
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1)
+    &-text
+        width: 35vw
+        margin: 5vw
+        margin-left: 0
+        h2
+            font-size: 2.5em
+        p
+            font-size: 1.5em
+            color: $grayish-blue
+    &-image
+        width: 35%
+        height: 35%

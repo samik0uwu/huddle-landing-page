@@ -144,4 +144,20 @@ h1, h2, h3 {
   width: 100%;
   color: hsl(193deg, 100%, 96%);
   padding: 20vh 5vw 0 5vw;
+  display: block;
+}
+.foot-container a {
+  text-decoration: none;
+  color: hsl(193deg, 100%, 96%);
+}
+.foot-container-lists {
+  display: flex;
+}
+.foot-container-lists-info {
+  list-style: none;
+}
+.foot-container-lists-links {
+  list-style: none;
+  -moz-columns: 2;
+       columns: 2;
 }/*# sourceMappingURL=style.css.map */

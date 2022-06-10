@@ -1,0 +1,66 @@
+// colors
+$pink: hsl(322, 100%, 66%)
+$pale-cyan: hsl(193, 100%, 96%)
+$dark-cyan: hsl(192, 100%, 9%)
+$grayish-blue: hsl(208, 11%, 55%)
+
+body
+    font-family: 'Open Sans', sans-serif
+    font-weight: 400
+    color: $dark-cyan
+    margin: 0
+
+h1, h2, h3
+    font-family: 'Poppins', sans-serif
+    font-weight: 600
+
+.head
+    background-image: url("images/bg-hero-desktop.svg")
+    background-size: cover
+    // background-color: #8dbef5ad
+    &-top
+        display: flex
+        justify-content: space-between
+        padding: 50px 70px
+        img
+            width: 15%
+            height: 15%
+            padding: 20px
+        button
+            background-color: white
+            font-weight: 700
+            font-size: 1.2em
+            width: 260px
+            height: 70px
+            border: none
+            border-radius: 50px
+            box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15)
+            &:hover
+                color: $grayish-blue
+    &-bottom
+        display: block
+        float: left
+        width: 35vw
+        margin: 120px 70px 0 100px
+        h1
+            // width: 20vw
+            font-size: 3.5em
+        p
+            font-size: 1.45em
+        button
+            background-color: $pink
+            color: $pale-cyan
+            border: none
+            border-radius: 50px
+            height: 70px
+            width: 350px
+            font-size: 1em
+            font-weight: 700
+            box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15)
+            margin: 20px
+            &:hover
+                background-color: lighten($pink,10)
+    &-mockup
+        width: 50%
+        height: 50%
+        margin-bottom: 100px

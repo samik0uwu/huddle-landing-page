@@ -9,6 +9,7 @@ body
     font-weight: 400
     color: $dark-cyan
     margin: 0
+    overflow-x: hidden
 
 h1, h2, h3
     font-family: 'Poppins', sans-serif
@@ -128,15 +129,52 @@ h1, h2, h3
         background-color: $dark-cyan
         width: 100%
         color: $pale-cyan
-        padding: 20vh 5vw 0 5vw
+        padding: 20vh 7vw 5vh 7vw
         display: block
+        &-logo
+            margin-left: 40px
+            width: 1%
         a
             text-decoration: none
             color: $pale-cyan
+            &:hover
+                text-decoration: underline
         &-lists
             display: flex
+            font-size: 1.2em
+            ul
+                list-style: none
             &-info
-                list-style: none
+                width: 27vw
+                li
+                    display: flex
+                    margin-top: 2vh
+                    img
+                        height: 20px
+                        margin-right: 1vw
+                    p
+                        margin-top: -1vh
+
             &-links
-                list-style: none
                 columns: 2
+                column-gap: 10vw
+                margin: 2vh 10vw
+                line-height: 5vh
+            &-socials
+                display: flex
+                width: 10vw
+                a
+                    border: solid white 1px
+                    border-radius: 30px
+                    width: 30px
+                    height: 30px
+                    margin-right: 20px
+                    display: block
+
+                    padding: 6px 3px 6px 10px
+                    &:hover
+                        color: $pink
+                        border-color: $pink
+                        
+        .copy
+            margin-left: 70vw
